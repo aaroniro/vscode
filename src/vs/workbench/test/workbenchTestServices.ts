@@ -1197,11 +1197,7 @@ export class TestBackupFileService implements IBackupFileService {
 		return Promise.resolve();
 	}
 
-	didDiscardAllWorkspaceBackups = false;
-
 	discardBackups(): Promise<void> {
-		this.didDiscardAllWorkspaceBackups = true;
-
 		return Promise.resolve();
 	}
 }
